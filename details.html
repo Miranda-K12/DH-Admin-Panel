@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ka">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Risk Manager - Loan Details</title>
+    <link rel="stylesheet" href="./details.css" />
+  
+  </head>
+
+  <body>
+    <header>
+      <a href="./index.html" class="bank-logo">Bank Logo</a>
+
+      <div class="user-info">
+        <div class="user-icon">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+          >
+            <circle cx="12" cy="8" r="4" stroke-width="2" />
+            <path
+              d="M5 20v-2c0-2.2 1.8-4 4-4h6c2.2 0 4 1.8 4 4v2"
+              stroke-width="2"
+            />
+          </svg>
+        </div>
+        <div class="user-details">
+          <div class="user-name">DH • გიორგი ქანთარია</div>
+        </div>
+      </div>
+    </header>
+
+    <div class="card" data-id="A-77801">
+      <div class="card-header">
+        <div class="case-title">
+          <h3>სესხის დეტალური ინფორმაცია</h3>
+        </div>
+      </div>
+
+      <div class="section info">
+        <p><strong>განაცხადის ID:</strong> A-77801</p>
+        <span class="status partial"
+          >სისტემის გადაწყვეტილება: ნაწილობრივი დამტკიცება</span
+        >
+      </div>
+      <div class="meta">
+        <span class="pill">Case Status: FORWARDED_FOR_FINAL_DECISION</span>
+        <span class="pill">case_id: 0365</span>
+        <span class="pill">Assigned to: DH• გიორგი ქანთარია</span>
+        <span class="pill">Forwarded by: LO • მირანდა ყაჩლავაშვილი</span>
+      </div>
+      <!-- Borrower (read-only) -->
+      <div class="section">
+        <h4>მსესხებელი (read-only)</h4>
+        <div class="info-grid">
+          <div><span class="label">სახელი</span><span>ლევანი</div>
+          <div><span class="label">გვარი</span><span>მიქელაძე</span></div>
+          <div>
+            <span class="label">პირადი ნომერი</span><span>01001001001</span>
+          </div>
+          <div>
+            <span class="label">დაბადების თარიღი</span><span>1993-06-18</span>
+          </div>
+          <div>
+            <span class="label">ტელეფონი</span><span>+995 598 12 18 12</span>
+          </div>
+          <div>
+            <span class="label">ელ-ფოსტა</span><span>levanimikeladze@gmail.com</span>
+          </div>
+          <div>
+            <span class="label">კლიენტის ყოველთვიური შემოსავალი</span>
+            <span class="value">4,500 ₾</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Loan (read-only) -->
+      <div class="section">
+        <h4>სესხის ინფორმაცია (read-only)</h4>
+        <div class="info-grid">
+          <div>
+            <span class="label">მოთხოვნილი თანხა</span
+            ><span class="value">48000 ₾</span>
+          </div>
+          <div>
+            <span class="label">საპროცენტო განაკვეთი (წლიური)</span
+            ><span class="value">17.5%</span>
+          </div>
+          <div>
+            <span class="label">სესხის ტიპი</span
+            ><span class="value">სამომხმარებლო სესხი</span>
+          </div>
+          <div>
+            <span class="label">რეკომენდებული ვადა</span
+            ><span class="value">48 თვე</span>
+          </div>
+          <div>
+            <span class="label">რეკომენდებული დამტკიცებული თანხა</span
+            ><span class="value">22000 ₾</span>
+          </div>
+          <div>
+            <span class="label">რეკომენდებული თვიური გადასახადი</span
+            ><span class="value">1200 ₾</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- System explainability (read-only) -->
+      <div class="section">
+        <h4>სისტემის გადაწყვეტილება </h4>
+
+        <div class="info-grid">
+          <div>
+            <span class="label">გადაწყვეტილების თარიღი</span>
+            <span class="value">2025-12-13</span>
+          </div>
+
+          <div>
+            <span class="label">Trigger reason code</span>
+            <span class="value">TR-RISK-02</span>
+          </div>
+
+          <div>
+            <span class="label">Reason code</span>
+            <span class="value">RC-SCORE-03</span>
+          </div>
+
+          <div class="wide">
+            <span class="label">Reason code განმარტება</span>
+            <span class="value"
+              >საკრედიტო ქულა საკმარისია შემცირებული თანხისთვის</span
+            >
+          </div>
+
+          <div class="wide">
+            <span class="label">Trigger განმარტება</span>
+            <span class="value">DTI (Debt-to-Income) მაჩვენებელი ზღვართან ახლოსაა</span>
+          </div>
+        </div>
+      </div>
+
+
+   
+
+      <!-- Documents (read-only UI) -->
+      <div class="section">
+        <h4>დოკუმენტები (read-only)</h4>
+
+        <table class="docs-table">
+          <thead>
+            <tr>
+              <th>დოკუმენტი</th>
+              <th>ტიპი</th>
+              <th>სტატუსი</th>
+              <th>მოქმედება</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ID Card.pdf</td>
+              <td>პირადობის დოკუმენტი</td>
+            
+              <td><span class="doc-status ok">ატვირთულია</span></td>
+              <td>
+                <button class="doc-btn" type="button">ნახვა</button>
+                <button class="doc-btn" type="button">ჩამოტვირთვა</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Salary Statement.pdf</td>
+              <td>შემოსავლის დამადასტურებელი</td>
+              <td><span class="doc-status ok">ატვირთულია</span></td>
+              <td>
+                <button class="doc-btn" type="button">ნახვა</button>
+                <button class="doc-btn" type="button">ჩამოტვირთვა</button>
+              </td>
+            </tr>
+             <tr>
+              <td>business.pdf</td>
+              <td>შემოსავლები ბიზნესიდან (ამონაწერი)</td>
+              <td><span class="doc-status ok">ატვირთულია</span></td>
+              <td>
+                <button class="doc-btn" type="button">ნახვა</button>
+                <button class="doc-btn" type="button">ჩამოტვირთვა</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+<div class="section">
+        <h4>სესხის ოფიცრის რეკომენდაცია</h4>
+        <div class="comment-box readonly">
+          <p class="comment-text">
+        სისტემამ მიიღო გადაწყვეტილება სესხის ნაწილობრივ დადასტურებასთან დაკავშირებით. მომხმარებელთან კომუნიკაციის დადგინდა, რომ მას აქვს ყოველთვიური შემოსავალი 2000 ლარი ბიზნესიდან, რომელიც არ იყო  გათვალისწინებული. გიგზავნით გზავნილების ამონაწერის დოკუმენტს. 
+          </p>
+          <div class="comment-meta">
+            <p class="pill small">Author: LO • მირანდა ყაჩლავაშვილი</p>
+            <p class="pill small">2025-12-13 11:05</p>
+          </div>
+        </div>
+      </div>
+
+
+ <form id="rmForm" novalidate>
+
+  <!-- RM decision -->
+  <div class="section">
+    <h4>გადაწყვეტილება</h4>
+
+    <div class="decision-grid">
+      <div class="field">
+        <span class="label">
+          დეპ. ხელმძღვანელის გადაწყვეტილება <span class="required">*</span>
+        </span>
+        <select
+          class="control-select"
+          id="finalDecision"
+          name="finalDecision"
+          required
+        >
+          <option value="">აირჩიეთ გადაწყვეტილება</option>
+          <option value="APPROVE">დამტკიცება</option>
+          <option value="REJECT">უარყოფა</option>
+          <option value="PARTIAL_APPROVE">ნაწილობრივი დამტკიცება</option>
+          <option value="CONDITIONAL_APPROVE">პირობითი დამტკიცება</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <span class="label">
+          Override reason code <span class="required">*</span>
+        </span>
+        <select
+          class="control-select"
+          id="overrideCode"
+          name="overrideCode"
+          required
+        >
+          <option value="">აირჩიეთ შესაბამისი კოდი</option>
+          <option value="OVR-RISK-01">OR-RISK-02 - შემოსავლის სტაბილურობა შეფასდა დადებითად</option>
+          <option value="OVR-INCOME-02">OR-RISK-03 - დამატებითი ფაქტორი ამცირებს საკრედიტო რისკს</option>
+          <option value="OVR-DOC-03">OR-DATA-02 - მონაცემები დაზუსტდა</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- RM comment -->
+  <div class="section">
+    <h4> კომენტარი <span class="required">*</span></h4>
+
+    <textarea
+      id="rmComment"
+      name="rmComment"
+      class="rm-comment"
+      placeholder="დაამატეთ კომენტარი (მინიმუმ 3 სიტყვა)..."
+      required
+    ></textarea>
+
+    <div class="error-msg hidden" id="rmCommentError">
+      კომენტარი სავალდებულოა და უნდა შეიცავდეს მინიმუმ 3 სიტყვას
+    </div>
+  </div>
+
+  <!-- RM document upload -->
+  <div class="section">
+    <h4>Risk Manager დოკუმენტის ატვირთვა</h4>
+
+    <input
+      type="file"
+      id="rmDocument"
+      name="rmDocument"
+      accept=".pdf,.jpg,.png"
+    />
+
+    <p class="hint">დასაშვებია PDF / JPG / PNG (არასავალდებულო)</p>
+  </div>
+<div class="success-msg hidden" id="successMessage">
+  ✅ სესხის გადაწყვეტილება წარმატებით გაიგზავნა
+</div>
+  <!-- Actions -->
+  <div class="section actions">
+    <button class="btn manager btnSave" type="submit">
+      გადაწყვეტილების შენახვა
+    </button>
+    <button type="reset" class="reset btn">გასუფთავება</button>
+  </div>
+
+</form>
+
+
+      </div>
+
+      <!-- Audit -->
+      <div class="section audit">
+        <p>Audit trail / ქეისის ისტორია</p>
+        <p>2025-12-13 10:02 - ქეისი შეიქმნა</p>
+        <p>2025-12-13 10:05 - სისტემის შეფასება დასრულდა</p>
+        <p>
+          2025-12-13 11:05 - LO კომენტარი დაემატა (LO • მირანდა ყაჩლავაშვილი)
+        </p>
+        <p>2025-12-13 11:06 - ქეისი გადამისამართდა რისკ მენეჯერთან</p>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+   <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("rmForm");
+  const decisionSelect = document.getElementById("finalDecision");
+  const overrideCode = document.getElementById("overrideCode");
+  const comment = document.getElementById("rmComment");
+  const commentError = document.getElementById("rmCommentError");
+  const successMsg = document.getElementById("successMessage");
+  const saveBtn = document.querySelector(".btnSave");
+  const escalateBtn = document.querySelector(".btnEscalate");
+
+  // --- Decision color class ---
+  function applyDecisionColor() {
+    decisionSelect.classList.remove("approve", "reject", "partial", "conditional");
+
+    switch (decisionSelect.value) {
+      case "APPROVE":
+        decisionSelect.classList.add("approve");
+        break;
+      case "REJECT":
+        decisionSelect.classList.add("reject");
+        break;
+      case "PARTIAL_APPROVE":
+        decisionSelect.classList.add("partial");
+        break;
+      case "CONDITIONAL_APPROVE":
+        decisionSelect.classList.add("conditional");
+        break;
+    }
+  }
+  decisionSelect.addEventListener("change", applyDecisionColor);
+
+  // --- Comment live validation (hide error when 3+ words) ---
+  function updateCommentError() {
+    const words = comment.value.trim().split(/\s+/).filter(Boolean);
+    if (words.length >= 3) commentError.classList.add("hidden");
+  }
+  comment.addEventListener("input", updateCommentError);
+
+  // --- Validation for both Save & Escalate ---
+  function validateRMForm() {
+    // native required validation (selects + textarea)
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return false;
+    }
+
+    // comment must have 3+ words
+    const words = comment.value.trim().split(/\s+/).filter(Boolean);
+    if (words.length < 3) {
+      commentError.classList.remove("hidden");
+      comment.focus();
+      return false;
+    }
+
+    commentError.classList.add("hidden");
+    return true;
+  }
+
+  // --- SAVE decision ---
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    if (!validateRMForm()) return;
+
+    successMsg.textContent = "✅ სესხის გადაწყვეტილება წარმატებით გაიგზავნა";
+    successMsg.classList.remove("hidden");
+
+    saveBtn.disabled = true;
+    escalateBtn.disabled = true;
+
+    // const formData = new FormData(form);
+    // fetch("/api/decision", { method: "POST", body: formData });
+  });
+
+  // --- ESCALATE ---
+  escalateBtn.addEventListener("click", () => {
+    if (!validateRMForm()) return;
+
+    successMsg.textContent =
+      "📤 ქეისი წარმატებით ესკალირდა დეპარტამენტის ხელმძღვანელთან";
+    successMsg.classList.remove("hidden");
+
+    saveBtn.disabled = true;
+    escalateBtn.disabled = true;
+
+    // const formData = new FormData(form);
+    // formData.append("action", "ESCALATE");
+    // fetch("/api/escalate", { method: "POST", body: formData });
+  });
+
+  // --- RESET: hide success message, hide errors, re-enable buttons ---
+  form.addEventListener("reset", () => {
+    successMsg.classList.add("hidden");
+    commentError.classList.add("hidden");
+
+    // reset decision colors back to default
+    decisionSelect.classList.remove("approve", "reject", "partial", "conditional");
+
+    // enable buttons again
+    saveBtn.disabled = false;
+    escalateBtn.disabled = false;
+  });
+});
+
+
+</script>
+
+  </body>
+</html>
