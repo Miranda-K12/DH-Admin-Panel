@@ -1,13 +1,19 @@
+/* ========== Global reset ========== */
 * {
   box-sizing: border-box;
 }
+
+/* ========== Base page ========== */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  padding: 20px;
   background: #f6f7fb;
   color: #111;
 }
 
+
+/* ========== Header ========== */
 header {
   display: flex;
   justify-content: space-between;
@@ -15,7 +21,6 @@ header {
   padding: 20px;
   background-color: rgb(234, 76, 56);
   border-bottom: 2px solid #e0e0e0;
-  font-family: Arial, sans-serif;
   width: 100%;
 }
 
@@ -24,12 +29,14 @@ header {
   color: #1a237e;
   font-size: 24px;
 }
+
 .logo {
   margin: 0;
   color: #1a237e;
   font-size: 24px;
   text-decoration: none;
 }
+
 .user-info {
   display: flex;
   align-items: center;
@@ -66,35 +73,62 @@ header {
   margin-top: 2px;
 }
 
+/* ========== Layout blocks ========== */
+h2 {
+  text-align: center;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e6e8ef;
+  border-radius: 12px;
+  padding: 14px;
+    margin-bottom: 100px;
+}
+
 .tableWrap {
   margin-top: 14px;
   background: #fff;
   border: 1px solid #e6e8ef;
   border-radius: 12px;
   overflow: hidden;
+
 }
-h2 {
-  text-align: center;
-}
+
+/* ========== Tables (global) ========== */
+table,
 .table {
   width: 100%;
   border-collapse: collapse;
 }
+
 th,
 td {
-  padding: 5px;
+  padding: 10px;
   border-bottom: 1px solid #eef0f7;
   text-align: left;
   font-size: 12px;
 }
+
 th {
   background: #fbfbff;
   color: #333;
   font-weight: 700;
 }
+
 th:hover {
   background-color: #d9dcea;
 }
+
+/* ========== Buttons / badges ========== */
+button {
+  background-color: #00293d;
+  padding: 6px;
+  color: white;
+  border-radius: 10px;
+  border: none;
+}
+
 .rowBtn {
   padding: 5px;
   border: 1px solid #d9dcea;
@@ -102,6 +136,7 @@ th:hover {
   background: #fff;
   cursor: pointer;
 }
+
 .rowBtn:hover {
   background: #f3f4ff;
 }
@@ -114,46 +149,7 @@ th:hover {
   border: 1px solid #d9dcea;
 }
 
-.empty {
-  padding: 18px;
-  color: #555;
-}
-.hidden {
-  display: none;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  padding: 20px;
-  background: #f6f7fb;
-}
-.card {
-  background: #fff;
-  border: 1px solid #e6e8ef;
-  border-radius: 12px;
-  padding: 14px;
-}
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-th,
-td {
-  padding: 10px;
-  border-bottom: 1px solid #eef0f7;
-  text-align: left;
-}
-th {
-  background: #fbfbff;
-  font-weight: 700;
-  color: #111;
-}
-button {
-  background-color: #00293d;
-  padding: 6px;
-  color: white;
-  border-radius: 10px;
-}
+/* Status colors */
 .approve {
   background-color: rgb(86, 240, 86);
 }
@@ -169,23 +165,40 @@ button {
 .conditional {
   background-color: blue;
 }
+
+/* ========== Utilities ========== */
+.empty {
+  padding: 18px;
+  color: #555;
+}
+
 .hidden {
   display: none;
 }
 
+/* ========== Row hover ========== */
 .case-row {
   cursor: pointer;
 }
+
 .case-row:hover {
   background: #f3f4ff;
 }
 
+/* ========== Footer ========== */
 footer {
   background-color: rgb(234, 76, 56);
   padding: 24px;
   text-align: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
   color: white;
+  bor
 }
+
+/* ========== Controls ========== */
 .controls {
   display: flex;
   justify-content: space-between;
@@ -193,6 +206,17 @@ footer {
   gap: 10px;
   align-items: end;
   margin: 14px 0 12px;
+}
+
+.control-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.control-label {
+  font-size: 12px;
+  color: #666;
 }
 
 .control-input,
@@ -214,17 +238,6 @@ footer {
   min-width: 220px;
 }
 
-.control-field {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.control-label {
-  font-size: 12px;
-  color: #666;
-}
-
 .control-btn {
   height: 38px;
   padding: 0 14px;
@@ -240,31 +253,42 @@ footer {
   color: #222;
 }
 
-@media (max-width: 1200px) {
-  /* Desktop-only layout: optimized for >=1024px, no mobile support */
+/* ========== Top right buttons ========== */
+.buttons {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+  justify-content: flex-end;
+}
 
+.all-loans {
+  background-color: green;
+  color: white;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 5px;
+}
+
+.statics {
+  background-color: darkblue;
+  color: white;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 5px;
+}
+
+@media (max-width: 1200px) {
   body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f6f7fb;
-    color: #111;
+    min-width: 1024px;
   }
 
-  /* Center page content with max width 1024 */
   .card {
     max-width: 1024px;
     width: 100%;
     margin: 20px auto;
     padding: 20px;
-    background: #fff;
-    border: 1px solid #e6e8ef;
     border-radius: 14px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
-  }
-
-  /* If the viewport is smaller than 1024, we DON'T adapt; we just allow horizontal scroll */
-  body {
-    min-width: 1024px;
   }
 
   /* Header */
@@ -341,7 +365,7 @@ footer {
     color: #111;
   }
 
-  /* Status pill (you already have .status.approve etc.) */
+  /* Status pill */
   .status {
     display: inline-flex;
     align-items: center;
@@ -444,7 +468,7 @@ footer {
   .error-msg {
     color: #b71c1c;
     font-size: 12px;
-    margin-top: -8px; /* pulls it closer to textarea section */
+    margin-top: -8px;
   }
 
   .actions {
@@ -452,36 +476,4 @@ footer {
     gap: 12px;
     flex-wrap: wrap;
   }
-
-  /* utility */
-  .hidden {
-    display: none;
-  }
-}
-.case-row {
-  cursor: pointer;
-}
-
-.case-row:hover {
-  background: #f3f4ff;
-}
-.all-loans {
-  background-color: green;
-  color: white;
-  text-decoration: none;
-  padding: 12px;
-  border-radius: 5px;
-}
-.statics {
-  background-color: darkblue;
-  color: white;
-  text-decoration: none;
-  padding: 12px;
-  border-radius: 5px;
-}
-.buttons {
-  display: flex;
-  gap: 24px;
-  margin-bottom: 24px;
-  justify-content: flex-end;
 }
