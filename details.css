@@ -250,7 +250,9 @@ header {
 }
 
 .control-select {
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
   max-width: 300px;
   background: #fff;
   color: #222;
@@ -494,4 +496,62 @@ textarea.mini {
   .audit p {
     margin: 0;
   }
+}
+/* Scores block */
+.score {
+  display: grid;
+  gap: 8px;
+  padding: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.score-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.score-badge {
+  font-weight: 700;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  line-height: 1;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: #fff;
+}
+
+/* status colors (keep simple) */
+.score-badge.good {
+  border-color: rgba(16, 185, 129, 0.35);
+}
+.score-badge.mid {
+  border-color: rgba(245, 158, 11, 0.45);
+}
+.score-badge.bad {
+  border-color: rgba(239, 68, 68, 0.45);
+}
+
+.meter {
+  height: 10px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.meter-bar {
+  height: 100%;
+  width: 0%;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.55);
+  transition: width 200ms ease;
+}
+
+.score-hint {
+  font-size: 13px;
+  opacity: 0.8;
 }

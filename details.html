@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ka">
   <head>
     <meta charset="UTF-8" />
@@ -76,6 +76,45 @@
             <span class="label">კლიენტის ყოველთვიური შემოსავალი</span>
             <span class="value">4,500 ₾</span>
           </div>
+        </div>
+        <!-- NEW: Scores -->
+        <div class="score wide">
+          <div class="score-head">
+            <span class="label">DTI-score</span>
+            <span class="score-badge good" id="dtiBadge">28%</span>
+          </div>
+
+          <div
+            class="meter"
+            role="progressbar"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            aria-valuenow="28"
+          >
+            <div class="meter-bar" id="dtiBar" style="width: 28%"></div>
+          </div>
+
+          <div class="score-hint" id="dtiHint">Good (≤ 35%)</div>
+        </div>
+
+        <div class="score wide">
+          <div class="score-head">
+            <span class="label">Credit score</span>
+            <span class="score-badge mid" id="csBadge">640</span>
+          </div>
+
+          <div
+            class="meter meter-score"
+            role="progressbar"
+            aria-valuemin="300"
+            aria-valuemax="850"
+            aria-valuenow="640"
+          >
+            <!-- width 계산: (score-300)/(850-300)= (640-300)/550=0.618 => 61.8% -->
+            <div class="meter-bar" id="csBar" style="width: 62%"></div>
+          </div>
+
+          <div class="score-hint" id="csHint">Medium</div>
         </div>
       </div>
 
